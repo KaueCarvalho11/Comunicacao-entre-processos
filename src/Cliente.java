@@ -34,15 +34,11 @@ public class Cliente {
             System.out.println(e.getMessage());
             System.out.println("Erro ao estabelecer conexão");
         }
-
     }
 
     public static void main(String[] args) {
-
         Cliente c1 = new Cliente();
 
         c1.inicialiaCliente();
-
     }
-
 }
