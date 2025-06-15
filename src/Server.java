@@ -13,11 +13,14 @@ public class Server {
             ServerSocket server = new ServerSocket(port);
             System.out.print("Servidor iniciado na porta " + port);
 
+            Socket cliente = server.accept();
+            System.out.println("Cliente conectado: + " + cliente.getInetAddress());
+
         } catch(IOException e){
             System.out.println(e.getMessage());
             System.out.println("Erro ao inicializar servidor");
         }
     }
-}
+}   
 
     
