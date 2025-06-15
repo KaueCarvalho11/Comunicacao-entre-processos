@@ -14,7 +14,7 @@ public class Server {
             System.out.println("Servidor iniciado na porta " + port);
 
             Socket cliente = server.accept();
-            System.out.println("Cliente conectado: + " + cliente.getInetAddress());
+            System.out.println("Cliente conectado: " + cliente.getInetAddress());
 
             PrintWriter saida = new PrintWriter(cliente.getOutputStream(), true);
 
